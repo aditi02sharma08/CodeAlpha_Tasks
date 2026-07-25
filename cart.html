@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Shopping Cart</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="cart.html">Cart</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<hr>
+
+<section>
+    <h2>Your Cart</h2>
+
+<div id="cart-items"></div>
+
+<p id="empty-cart-message"></p>
+
+<h3>Total: ₹<span id="total-price">0</span></h3>
+
+<button onclick="window.location.href='checkout.html'" id="checkout-btn">
+    Checkout
+</button>
+</section>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 Simple E-Commerce Store. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

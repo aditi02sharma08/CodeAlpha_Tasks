@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Simple E-Commerce Store</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="products.html">Products</a> |
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a> |
+            <a href="login.html">Login</a> |
+            <a href="register.html">Register</a>
+            <a href="#" id="logout-link">Logout</a>
+        </nav>
+
+<br>
+
+<input
+    type="text"
+    id="search"
+    placeholder="Search products..."
+>
+
+<button onclick="searchProduct()">
+    Search
+</button>
+
+<hr>
+
+</header>
+
+<section class="hero">
+
+    <h2>Welcome to Simple E-Commerce Store</h2>
+
+    <p>Shop the Latest Electronics at the Best Prices!</p>
+
+    <a href="products.html">
+        <button>Shop Now</button>
+    </a>
+
+</section>
+
+    <!-- Products Section -->
+    <section>
+
+        <h2>Featured Products</h2>
+
+        <div>
+            <img src="images/headphones.jpg" alt="Wireless Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>Price: ₹2,499</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+           <a href="product-details.html">
+    <button>View Details</button>
+</a>
+        </div>
+
+
+        <div>
+            <img src="images/watch.jpg" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p>Price: ₹3,999</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+            <a href="product-details.html">
+    <button>View Details</button>
+</a>
+        </div>
+
+        <div>
+            <img src="images/speaker.jpg" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p>Price: ₹1,799</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+
+<a href="product-details.html">
+    <button>View Details</button>
+</a>
+        </div>
+
+    </section>
+<section id="why-choose-us">
+
+    <h2>Why Choose Us?</h2>
+    <p>✔ High Quality Products</p>
+    <p>✔ Fast Delivery</p>
+    <p>✔ Secure Payment</p>
+    <p>✔ 24/7 Customer Support</p>
+
+</section>
+ <section id="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+    <p>"Amazing products and excellent quality!"</p>
+    <h4>- Rahul Sharma</h4>
+    </div>
+    <div class="review">
+    <p>"Fast delivery and great customer service."</p>
+    <h4>- Priya Verma</h4>
+    </div>
+
+<div class="review">
+    <p>"Easy shopping experience and secure payment."</p>
+    <h4>- Anjali Gupta</h4>
+</div>
+ </section>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+    </div>
+     <p>&copy; 2026 Simple E-Commerce Store. All Rights Reserved.</p>
+<h3>Contact Us</h3>
+
+<p>📞 +91 98765 43210</p>
+<p>📧 support@simpleecommerce.com</p>
+<h3>Follow Us</h3>
+
+<p>
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">X (Twitter)</a>
+</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

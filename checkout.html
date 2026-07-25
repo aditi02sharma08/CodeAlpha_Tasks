@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section class="checkout-container">
+<h2>Customer Details</h2>
+
+    <form id="checkout-form">
+
+        <label for="fullname">Full Name</label><br>
+        <input type="text" id="fullname" placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" placeholder="Enter your phone number"><br><br>
+        <label for="address">Address</label><br>
+<textarea id="address" placeholder="Enter your full address"></textarea><br><br>
+
+<label for="city">City</label><br>
+<input type="text" id="city" placeholder="Enter your city"><br><br>
+
+<label for="state">State</label><br>
+<input type="text" id="state" placeholder="Enter your state"><br><br>
+
+<label for="pincode">Pincode</label><br>
+<input type="text" id="pincode" placeholder="Enter your pincode"><br><br>
+<h3>Payment Method</h3>
+
+<input type="radio" id="cod" name="payment" value="Cash on Delivery">
+<label for="cod">Cash on Delivery</label><br>
+
+<input type="radio" id="upi" name="payment" value="UPI">
+<label for="upi">UPI</label><br>
+
+<input type="radio" id="card" name="payment" value="Card">
+<label for="card">Debit/Credit Card</label><br><br>
+<button type="button" id="place-order-btn">
+    Place Order
+</button>
+
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
