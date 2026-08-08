@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff, #f7edff);
+}
+
+/* FORCE EVERYTHING TO CENTER */
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  margin: 0 auto 25px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 18px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  box-shadow: 0 10px 30px #0002;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  color: #2563eb;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 5px 0 0;
+}
+
+/* MAIN */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ADD TASK */
+
+.add-box {
+  width: 100%;
+
+  background: white;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px #0001;
+}
+
+.add-box h2 {
+  margin-top: 0;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+/* BUTTONS */
+
+button {
+  padding: 12px 20px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* TO DO */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title b {
+  background: #2563eb;
+  color: white;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+}
+
+/* TASKS */
+
+.tasks {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* CARD */
+
+.task-card {
+  width: 100%;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  border-left: 5px solid #6366f1;
+
+  box-shadow: 0 5px 20px #0001;
+}
+
+.task-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* ROW */
+
+.row {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+/* ASSIGNED */
+
+.assigned {
+  margin-top: 10px;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+/* COMMENTS */
+
+.comments {
+  margin-top: 20px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+
+  padding: 12px;
+
+  margin-top: 8px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #60a5fa, #8b5cf6);
+
+  color: white;
+
+  font-weight: bold;
+}
+
+.comment p {
+  margin: 4px 0;
+  color: #64748b;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .add-form,
+  .row {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
